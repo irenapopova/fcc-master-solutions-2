@@ -1,0 +1,1 @@
+{"index.js":"function fearNotLetter(str) {\n  let firstLetter = str.charCodeAt(0);\n  let index = 0;\n  while(index <= str.length - 1){\n    if (str.charCodeAt(index) !== firstLetter) {\n      return String.fromCharCode(firstLetter);\n    }\n    firstLetter++;\n    index++;\n  }\n}\n\nfearNotLetter(\"abce\");"}

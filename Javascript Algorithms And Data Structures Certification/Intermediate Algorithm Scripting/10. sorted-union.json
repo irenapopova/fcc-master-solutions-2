@@ -1,0 +1,1 @@
+{"index.js":"function uniteUnique(...arr) {\n  const newArr = [];\n  arr.forEach(arrItem => {\n    arrItem.forEach(item => {\n      if (!newArr.includes(item)) {\n        newArr.push(item);\n      }\n    })\n  })\n  return newArr;\n}\n\nuniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);"}

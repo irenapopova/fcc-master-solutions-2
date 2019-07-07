@@ -1,0 +1,1 @@
+{"index.js":"function sumFibs(num) {\n  let prev = 1;\n  let current = 1;\n  let next;\n  const fib = [1,1];\n  while (current < num) {\n    next = current + prev;\n    if (next > num) break;\n    fib.push(next);\n    prev = current;\n    current = next;\n  }\n  return fib.filter(item => item%2 !== 0).reduce((acc, item) => acc + item);\n}\n\nsumFibs(4);"}

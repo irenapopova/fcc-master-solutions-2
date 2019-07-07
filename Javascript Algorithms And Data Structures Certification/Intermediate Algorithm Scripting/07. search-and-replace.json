@@ -1,0 +1,1 @@
+{"index.js":"function myReplace(str, before, after) {\n  const firstLetterCharCode = before.charCodeAt(0);\n  if (firstLetterCharCode >= 65 && firstLetterCharCode <= 90) {\n    after = after.slice(0, 1).toUpperCase() + after.slice(1);\n  }\n  return str.replace(before, after);\n}\n\nmyReplace(\"A quick brown fox jumped over the lazy dog\", \"jumped\", \"leaped\");"}

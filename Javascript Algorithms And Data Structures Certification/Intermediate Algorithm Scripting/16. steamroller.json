@@ -1,0 +1,1 @@
+{"index.js":"function steamrollArray(arr) {\n  // I'm a steamroller, baby\n  const flat = (arr) => arr.reduce((accumulator, currentValue) => {\n    if (Array.isArray(currentValue)) {\n      return accumulator.concat(flat(currentValue));\n    } else {\n      return accumulator.concat(currentValue);\n    }\n  },[]);\n  return flat(arr);\n}\n\nsteamrollArray([1, [2], [3, [[4]]]]);"}

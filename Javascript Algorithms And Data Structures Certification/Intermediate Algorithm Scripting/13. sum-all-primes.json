@@ -1,0 +1,1 @@
+{"index.js":"function sumPrimes(num) {\n  const primes = [2];\n  for(let i=3; i <= num; i++) {\n    let divisible = false;\n    let j = 2;\n    for(;j < i; j++) {\n      if (i%j === 0) divisible = true;\n    }\n    if (!divisible) primes.push(j);\n    divisible = false;\n  }\n  return primes.reduce((acc, current) => acc + current);\n}\n\nconsole.log(sumPrimes(977));"}

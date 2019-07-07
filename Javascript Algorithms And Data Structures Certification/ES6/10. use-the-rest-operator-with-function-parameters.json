@@ -1,0 +1,1 @@
+{"index.js":"function sum(...args) {\n  console.log(args);\n  return args.reduce((a, b) => a + b, 0);\n}\nconsole.log(sum(1, 2, 3)); // 6"}

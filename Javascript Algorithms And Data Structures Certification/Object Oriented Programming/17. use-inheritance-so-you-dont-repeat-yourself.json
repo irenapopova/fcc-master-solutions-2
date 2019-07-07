@@ -1,0 +1,1 @@
+{"index.js":"function Cat(name) {\n  this.name = name; \n}\n\nfunction Bear(name) {\n  this.name = name; \n}\n\nfunction Animal() { }\n\nAnimal.prototype = {\n  constructor: Animal,\n  eat() {\n    console.log('nom nom nom');\n  }\n};"}
